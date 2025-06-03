@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager | Professional Todo App</title>
+  <meta name="description" content="A clean, professional task management application">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  
+  <script src="https://kit.fontawesome.com/d5f22ee4f8.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="header-content">
+        <h1>
+          <i class="fas fa-tasks"></i>
+          Task Manager
+        </h1>
+        <p class="task-counter">0 tasks</p>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="todo-section">
+       
+        <form id="todo-form" class="todo-form">
+          <div class="input-group">
+            <input
+              type="text"
+              id="todo-input"
+              class="todo-input"
+              placeholder="Add a new task..."
+              aria-label="New task"
+              required
+            />
+            <button type="submit" id="submit" class="todo-add-button" aria-label="Add task">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="todo-list-container">
+          <div class="empty-state">
+            <i class="far fa-clipboard"></i>
+            <p>No tasks yet. Add one above!</p>
+          </div>
+        </div>
+        <div class="todo-footer">
+          <span class="items-left">0 items left</span>
+          <button id="clear-all" class="clear-all-button">
+            Clear Completed
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Professional Task Management Application</p>
+      <p class="small-text">Built with HTML, CSS & JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
