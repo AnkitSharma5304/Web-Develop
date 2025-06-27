@@ -1,0 +1,9 @@
+.display {
+    margin: 10px;
+    width: 250px;
+    font-size: 25px;
+    cursor: default;
+    /* Hide text cursor */
+    caret-color: transparent;
+    /* Hide blinking cursor */
+}
