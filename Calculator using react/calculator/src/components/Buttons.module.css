@@ -1,0 +1,21 @@
+
+.btncontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+  width: 60px;        /* control width */
+  height: 60px;       /* control height */
+  font-size: 20px;    /* larger text */
+  margin: 5px;        /* spacing between buttons */
+  cursor: pointer;    /* hand pointer on hover */
+  border: none;
+  border-radius: 8px;
+  background-color: #ddd;
+  transition: 0.2s;
+}
+.button:hover{
+    background-color: gray;
+}
