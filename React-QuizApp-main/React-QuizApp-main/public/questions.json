@@ -1,0 +1,101 @@
+{
+  "questions": [
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Hyper Text Markdown Language"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which HTML element is used to define an internal style sheet?",
+      "options": ["<css>", "<style>", "<script>", "<link>"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "options": ["<a>", "<link>", "<href>", "<hyper>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which property is used to change the text color in CSS?",
+      "options": ["font-color", "text-color", "color", "background-color"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a valid CSS comment?",
+      "options": [
+        "// this is a comment",
+        "<!-- this is a comment -->",
+        "/* this is a comment */",
+        "' this is a comment"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": [
+        "Creative Style Sheets",
+        "Computer Style Sheets",
+        "Colorful Style Sheets",
+        "Cascading Style Sheets"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Inside which HTML element do we put JavaScript code?",
+      "options": ["<script>", "<js>", "<javascript>", "<code>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of these is the correct syntax for a function in JavaScript?",
+      "options": [
+        "function = myFunc()",
+        "def myFunc()",
+        "function myFunc()",
+        "fun:myFunc()"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": ["let", "int", "var", "Both let and var"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "How do you write 'Hello World' in an alert box?",
+      "options": [
+        "msgBox('Hello World')",
+        "alertBox('Hello World')",
+        "alert('Hello World')",
+        "msg('Hello World')"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What will `typeof []` return in JavaScript?",
+      "options": ["array", "object", "list", "undefined"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method adds an item to the end of an array?",
+      "options": ["push()", "add()", "append()", "insert()"],
+      "correctOption": 0,
+      "points": 10
+    }
+  ]
+}

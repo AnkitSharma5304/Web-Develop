@@ -1,0 +1,21 @@
+body{
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: center; /* used for aligning items horizontaly*/
+    align-items: center;    /* used for aligning items vertically*/
+    height: 100vh;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.clock-container{
+      padding: 40px 80px;
+      background-color:brown;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+#clock{
+    color: #38bdf8;
+  font-size: 60px;
+  letter-spacing: 2px;
+}

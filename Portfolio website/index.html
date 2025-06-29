@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit_Sharma Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .skills {
+      position: relative;
+      top: -45px;
+    }
+
+    body {
+      background-color: #000022;
+      color: #ffff;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      background-color: #001242;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: aquamarine;
+      font-size: 1.03rem;
+    }
+
+    .left {
+      font-size: 2rem;
+    }
+
+    .left:hover {
+      color: aquamarine;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 55px;
+    }
+
+    .right-section img {
+      width: 100%;
+      opacity: 0.5;
+    }
+
+    .firstsection div {
+      width: 30%;
+    }
+
+    .myname {
+      color: #f7f7ff;
+    }
+
+    #element {
+      color: brown;
+    }
+
+    .left-section {
+      font-size: 2.8rem;
+      position: relative;
+      /* enable absolute positioning of child */
+      color: white;
+    }
+
+    .left-section img {
+      width: 100%;
+      opacity: 0.1;
+      position: absolute;
+      top: -30px;
+      /* move image slightly upward */
+      left: 0;
+      z-index: 1;
+    }
+
+    .left-section .text-overlay {
+      position: relative;
+      z-index: 2;
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+      padding: 16px;
+    }
+
+    .box {
+      width: 80vw;
+      height: 2px;
+      background-color: white;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      align-items: flex-start;
+      padding-top: 0px;
+    }
+
+    .vertical {
+      height: 60px;
+      width: 1px;
+      background-color: white;
+      margin-top: 2px;
+    }
+
+    .img-top {
+      height: 46px;
+      width: 46px;
+      position: relative;
+      top: -48px;
+      right: 26px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 13px;
+      font-size: large;
+      right: 55px;
+      font-style: oblique;
+    }
+
+    .ver-descp {
+      position: relative;
+      top: 22px;
+      right: 55px;
+      font-size: x-small;
+      width: 150px;
+      color: gray;
+    }
+
+    .imghtml {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      right: 65px;
+      opacity: 0.13;
+      top: -113px;
+    }
+
+    .cpimg {
+      position: relative;
+      height: 196px;
+      width: 204px;
+      top: -166px;
+      right: 76px;
+      opacity: 0.2;
+    }
+
+    .iiit {
+      position: relative;
+      height: 199px;
+      width: 199px;
+      top: -148px;
+      right: 79px;
+      opacity: 0.2;
+
+    }
+
+    .aiml {
+      position: relative;
+      height: 199px;
+      width: 199px;
+      top: -148px;
+      right: 61px;
+      opacity: 0.2;
+    }
+
+    main hr {
+      border: 0;
+      background: #0d3090;
+      height: 1.2px;
+      margin: 40px 84px;
+    }
+
+    footer {
+      background-color: #03032d;
+      height: 233px;
+    }
+
+    .footer {
+      display: flex;
+      margin: auto;
+    }
+
+    .footer-heading {
+      position: relative;
+      left: 50px;
+      top: 10px;
+    }
+    .footer-second{
+      position: relative;
+      top: 35px;
+      left: 55px;
+    }
+    /* body.dark-mode {
+  background-color: #ffffff;
+  color: #000000;
+} */
+
+/* body.dark-mode nav {
+  background-color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: black;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: darkblue;
+}
+
+body.dark-mode .box,
+body.dark-mode .vertical {
+  background-color: black;
+}
+
+body.dark-mode .ver-descp {
+  color: #333;
+} */
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Ankit's Portfolio</div>
+    <button class="night-view" onclick="toggleDarkMode()">
+  🌙
+</button>
+
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="left-section">
+        <img src="./assets/imgg2.png" alt="Image" />
+        Hello World! This is
+        <!-- Element to contain animated typing -->
+        <span id="element"></span>
+        <br />
+        <span class="myname">Ankit Sharma</span>
+      </div>
+
+      <div class="right-section">
+        <img src="./assets/imgg.png" alt="Image" />
+      </div>
+    </section>
+    <hr />
+    <section class="secondSection">
+      <h1 class="skills">Work and Education:</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="img-top" src="./assets/dev.png" alt="dev-image">
+          <div class="vertical-title">
+            HTML,CSS,Java-Script,React
+          </div>
+          <div class="ver-descp">
+            Built Scalable Frontend Projects using above technologies in various domains and succesfully deployed them
+            on Github.
+          </div>
+          <img class="imghtml" src="./assets/imghtml.png" alt="html-image">
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="./assets/dev.png" alt="dev-image">
+          <div class="vertical-title">
+            Competitive Programming and DSA
+          </div>
+          <div class="ver-descp">
+            I am actively participating in Competitive programming platforms such as codechef(2 star) and codeforces,
+            other than that i have also practiced ample amount of dsa questions in leetcode giving me a well experience
+            in all kinds of data structures.
+          </div>
+          <img class="cpimg" src="./assets/cpimg.jpg" alt="">
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="./assets/dev.png" alt="dev-image">
+          <div class="vertical-title">
+            Collage Academics
+          </div>
+          <div class="ver-descp">
+            I am pursuing Engineering domain in Mathematics and Computing at IIIT bhagalpur with core subjects as Data
+            Structures and algorithms , Object Oriented Programming , Database Management System , Operating System ,
+            Optimization and other relavent courses of computers and mathematics.
+          </div>
+          <img class="iiit" src="./assets/iiit.png" alt="">
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="./assets/dev.png" alt="dev-image">
+          <div class="vertical-title">
+            Artificial and Machine Learning Enthausiast.
+          </div>
+          <div class="ver-descp">
+            I have also a deep interest in Artificial Intelligence and Machine Learning and with a strong background in
+            mathematics I am exploring these fields and will deep dive into this in future.
+          </div>
+          <img class="aiml" src="./assets/aiml.png" alt="">
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h4 class="footer-heading">Ankit's Portfolio</h4>
+      </div>
+      <div class="footer-second">
+        <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        </ul>
+      </div>
+      <div class="footer-third"></div>
+      <div class="footer-forth"></div>
+
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

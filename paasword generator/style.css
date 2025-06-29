@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Display Section */
+.display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.display {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    flex: 1;
+    outline: none;
+    padding: 5px;
+}
+
+.generate-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Input Controls */
+.input-container {
+    text-align: left;
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.slider {
+    width: 100%;
+    margin: 10px 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Strength Indicator */
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+[data-indicator] {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+}
+
+/* Generate Button */
+.generate-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.generate-button:hover {
+    background: #218838;
+}
